@@ -190,7 +190,7 @@ function HomePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)]" />
                 {SITE.tagline}
               </p>
-              <h1 className="text-balance font-sans text-4xl md:text-5xl font-semibold leading-[1.05] text-white md:text-5xl">
+              <h1 className="text-balance font-sans text-4xl font-bold md:font-semibold leading-[1.05] text-white md:text-5xl">
                 Professional Guidance for your <span className="italic text-[var(--gold)]">International </span>Journey.
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
@@ -205,7 +205,7 @@ function HomePage() {
                   className="group inline-flex items-center gap-3 rounded-full bg-[var(--whatsapp)] px-7 py-4 text-sm font-semibold text-white shadow-luxury transition-all hover:scale-[1.03]"
                 >
                   <WhatsAppIcon className="h-5 w-5" />
-                  Message on WhatsApp for Free Consultation
+                  Message us for Free Consultation
                 </a>
                 <Link
                   to="/services"
