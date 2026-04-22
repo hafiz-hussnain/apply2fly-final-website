@@ -35,7 +35,7 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
         <Link to="/" className="flex items-center gap-0 group">
           <div className="flex h-18 w-18 items-center justify-center rounded-full transition-transform group-hover:rotate-12">
-            <img src={logoImg} className="mt-5" alt="" />
+            <img src={logoImg} className="rounded-full h-12 w-12" alt="" />
           </div>
           <div className={`leading-tight ${scrolled ? "text-foreground" : "text-white"}`}>
             <div className="font-medium text-xl font-semibold tracking-wide">{SITE.short}</div>

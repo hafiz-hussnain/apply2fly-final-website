@@ -7,13 +7,13 @@ import { whatsappLink } from "@/lib/site";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Study & Visit Visa Consultancy | Apply 2 Fly" },
+      { title: "Services. Study & Visit Visa Consultancy | Apply 2 Fly" },
       {
         name: "description",
         content:
           "Study visa consultation, visit visa processing, and embassy-ready file preparation for the USA, UK, Italy, Germany, and Hungary.",
       },
-      { property: "og:title", content: "Services — Apply 2 Fly Visa Consultants" },
+      { property: "og:title", content: "Services. Apply 2 Fly Visa Consultants" },
       {
         property: "og:description",
         content:
@@ -29,42 +29,39 @@ const services = [
     icon: GraduationCap,
     title: "Study Visa Consultation",
     intro:
-      "From shortlisting universities to your first day on campus — we guide students through every milestone.",
+      "Your Study Abroad Dream, Handled Like Our Very Own. At Apply 2 Fly, we know a student visa isn’t just paperwork. It’s your future. Our consultants combine university + embassy expertise with a student-first approach, so you get clarity, not confusion.  ",
     items: [
-      "Profile & eligibility assessment",
-      "University and course shortlisting",
-      "Application & admission support",
-      "Financial documentation planning",
-      "Visa filing & interview preparation",
-      "Pre-departure briefing",
+      "Profile-based country & course guidance. No generic advice",
+      "GTE/SOP perfection. Essays that embassies and universities respect",
+      "Financial documentation audit. Zero last-minute surprises",
+      "Visa interview mastery. Practice until you’re confident",
+      "Post-arrival support. SIM, accommodation tips, airport pickup guidance",
     ],
   },
   {
     icon: Plane,
     title: "Visit Visa Processing",
     intro:
-      "Tourist, family, and business visit applications prepared with the credibility embassies expect.",
+      "Career Moves Shouldn’t Be Blocked by Paperwork. At Apply 2 Fly, we treat your work visa like it’s our own job offer. Our team understands embassy requirements, employer compliance, and what officers actually look for.",
     items: [
-      "Itinerary and travel plan design",
-      "Sponsor & invitation letter drafting",
-      "Bank statement and tax review",
-      "Cover letter and SOP writing",
-      "Appointment booking & filing",
-      "Interview coaching",
+      "Honest eligibility assessment. We won’t waste your time or money",
+      "Document precision. Contracts, experience letters, PCC. All audit-ready",
+      "Employer coordination. We sync with HR to avoid delays",
+      "Interview & compliance prep. No trick questions catch you off-guard",
+      "- Relocation support. Because landing the visa is step one",
     ],
   },
   {
     icon: FileText,
-    title: "File Preparation",
+    title: "Tourist Visa Processing",
     intro:
-      "Already have a case? We build embassy-ready files from scratch or refine existing applications.",
+      "Travel Plans Deserve Expert Backup. At Apply 2 Fly, we believe vacations shouldn’t get cancelled by visa rejections. Our consultants mix embassy insight with real traveler experience to make approvals simple.",
     items: [
-      "Document checklist & gap analysis",
-      "Translation and notarization guidance",
-      "Statement of Purpose (SOP) writing",
-      "Financial file structuring",
-      "Form filling & cross-checks",
-      "Final embassy submission package",
+      "Fast, honest profile check. Know your chances before you apply",
+      "Strong itinerary + cover letter drafting. What embassies want to see",
+      "Bank statement & ties to home. Presented the right way",
+      "Group & family applications. We keep everyone’s case aligned",
+      "Re-application strategy. If refused before, we fix what went wrong",
     ],
   },
 ];
@@ -75,7 +72,7 @@ function ServicesPage() {
       <PageHeader
         eyebrow="Services"
         title="Comprehensive visa support, from inquiry to approval."
-        subtitle="Three core services, one promise — clear guidance and a meticulously prepared file at every step."
+        subtitle="Three core services, one promise. Clear guidance and a meticulously prepared file at every step."
       />
 
       <section className="py-24">
@@ -91,7 +88,7 @@ function ServicesPage() {
                 <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full bg-[var(--gold)]/20 blur-3xl" />
                 <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
                 <div className="relative">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--gold)] text-navy">
+                  <div className="flex ~h-16 w-16 items-center justify-center rounded-2xl bg-[var(--gold)] text-navy">
                     <s.icon className="h-8 w-8" />
                   </div>
                   <p className="mt-8 text-xs font-semibold uppercase tracking-[0.4em] text-[var(--gold)]">
@@ -137,7 +134,7 @@ function ServicesPage() {
             Not sure which service you need?
           </h2>
           <p className="mt-5 text-white/75">
-            Send us a message. We'll review your situation and recommend the right path — free of charge.
+            Send us a message. We'll review your situation and recommend the right path. Free of charge.
           </p>
           <a
             href={whatsappLink}

@@ -7,7 +7,7 @@ import { SITE, whatsappLink } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Apply 2 Fly Visa Consultants" },
+      { title: "Contact Us. Apply 2 Fly Visa Consultants" },
       {
         name: "description",
         content:
@@ -29,7 +29,7 @@ function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Let's talk on WhatsApp."
-        subtitle="The fastest way to get a clear, honest case assessment — directly with our consultants."
+        subtitle="The fastest way to get a clear, honest case assessment. Directly with our consultants."
       />
 
       <section className="py-24">
@@ -50,7 +50,7 @@ function ContactPage() {
                   Free WhatsApp Consultation
                 </h2>
                 <p className="mt-5 max-w-md text-white/80">
-                  Send a message with your goal — study or visit, and your destination. We'll
+                  Send a message with your goal. Study or visit, and your destination. We'll
                   respond with the next steps tailored to your case.
                 </p>
                 <a
@@ -91,7 +91,7 @@ function ContactPage() {
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li>• Mention whether it's a <strong className="text-foreground">study</strong> or <strong className="text-foreground">visit</strong> visa.</li>
                   <li>• Share your preferred country (USA, UK, Italy, Turkey , Malaysia or Other).</li>
-                  <li>• Tell us your background briefly — education or travel history.</li>
+                  <li>• Tell us your background briefly. Education or travel history.</li>
                 </ul>
               </div>
             </div>

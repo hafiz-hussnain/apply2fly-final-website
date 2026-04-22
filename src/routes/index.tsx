@@ -27,13 +27,13 @@ import denmarkImg from "@/assets/denmarkImg.jpg"
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Apply 2 Fly Visa Consultants — Elevate Your Future" },
+      { title: "Apply 2 Fly Visa Consultants. Elevate Your Future" },
       {
         name: "description",
         content:
           "Premium visa consultancy for study and visit visas to USA, UK, Italy, Germany & Hungary. Step-by-step guidance until approval. Free WhatsApp consultation.",
       },
-      { property: "og:title", content: "Apply 2 Fly Visa Consultants — Elevate Your Future" },
+      { property: "og:title", content: "Apply 2 Fly Visa Consultants. Elevate Your Future" },
       {
         property: "og:description",
         content:
@@ -65,35 +65,35 @@ const destinations = [
 const services = [
   {
     icon: GraduationCap,
-    title: "Study Visa Consultation",
-    desc: "Course shortlisting, university admissions, financial planning, and student visa filing — guided end to end.",
+    title: "For Students",
+    desc: "- Course selection, GTE/SOP perfection, financial docs, and interview prep so you land on campus, not in confusion.",
   },
   {
     icon: Plane,
-    title: "Visit Visa Processing",
-    desc: "Tourist and family visit applications with itinerary planning, sponsor letters, and interview preparation.",
+    title: "For Professionals",
+    desc: "Profile assessment, employer coordination, compliance checks, and relocation support to make career moves seamless.",
   },
   {
     icon: FileText,
-    title: "File Preparation",
-    desc: "Meticulously prepared documentation, SOPs, financial files, and embassy-ready submissions that earn approvals.",
+    title: "For Travlers",
+    desc: "- Strong itineraries, proper financials, family applications, and re-application fixes so your trip actually happens.",
   },
 ];
 
 const testimonials = [
   {
     name: "Rai Mukhtar Hakim",
-    role: "Study Visa — UK",
-    text: "From shortlisting universities to my UK landing — Apply 2 Fly handled every step. My file was clean, my interview prep was thorough. Approved on the first try.",
+    role: "Study Visa. UK",
+    text: "From shortlisting universities to my UK landing. Apply 2 Fly handled every step. My file was clean, my interview prep was thorough. Approved on the first try.",
   },
   {
     name: "Hasnat",
-    role: "Study Visa — South Korea",
+    role: "Study Visa. South Korea",
     text: "I was nervous at the beginning. Their team rebuilt my file from scratch and walked me through every detail. Got my South Korea visa within weeks.",
   },
   {
     name: "Abdul Razak",
-    role: "Visit Visa — USA",
+    role: "Visit Visa. USA",
     text: "Honest advice, no false promises. They told me exactly what was possible and delivered. Visited USA with full guidance even after arrival.",
   },
 ];
@@ -262,16 +262,16 @@ function HomePage() {
               Personal guidance, <em className="text-[var(--gold)]">until you Fly</em>.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              At Apply 2 Fly, we treat every application like our own. Our consultants combine deep
-              embassy knowledge with a human-first approach. Explaining each step, preparing every
-              document, and standing by you from your first message until your visa stamp.
+              At Apply 2 Fly, your dream is our responsibility. We don’t process applications. We champion them. Our consultants blend insider embassy expertise with genuine human care, turning complex visa rules into clear, doable steps.  
+
+<br/><br/> From your first question to the final stamp in your passport, we’re with you: clarifying doubts, perfecting documents, prepping you for interviews, and supporting you even after you land.  
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                "Honest case assessment",
-                "Step-by-step file building",
-                "Interview coaching",
-                "Post-arrival support",
+                "Transparent case assessment. No false promises, just facts",
+                "Precision file building. Every document, audit-ready",
+                "Expert interview prep. Walk in confident, walk out approved",
+                "Beyond arrival support. Because your journey doesn’t end at the airport",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--gold)]" />
@@ -281,7 +281,7 @@ function HomePage() {
             </ul>
             <Link
               to="/about"
-              className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-[var(--gold)]"
+              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-[var(--gold)]"
             >
               Learn more about us
               <ArrowRight className="h-4 w-4" />
@@ -299,8 +299,7 @@ function HomePage() {
               Tailored visa solutions, expertly delivered.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Whether you're heading abroad to study or to visit family, we build a strategy that
-              fits your story & not a template.
+              At Apply 2 Fly, a visa isn’t paperwork to us. it’s your future, your career, or your dream trip. That’s why we treat every application like our own.  
             </p>
           </div>
 
@@ -341,7 +340,7 @@ function HomePage() {
               </h2>
             </div>
             <p className="max-w-md text-sm text-muted-foreground">
-              We specialize in 15 high-demand countries — with deep expertise in each embassy's
+              We specialize in 15 high-demand countries. With deep expertise in each embassy's
               expectations, timelines, and approval criteria.
             </p>
           </div>
@@ -480,8 +479,8 @@ function HomePage() {
             Let's start your <em className="text-[var(--gold)]">visa journey</em> today.
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-muted-foreground">
-            Send us a message on WhatsApp. Get an honest case assessment and a clear roadmap —
-            completely free, no obligation.
+            Send us a message on WhatsApp. Get an honest case assessment and a clear roadmap.
+            Completely free, no obligation.
           </p>
           <a
             href={whatsappLink}
