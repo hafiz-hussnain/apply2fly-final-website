@@ -9,7 +9,7 @@ export const SITE = {
 };
 
 export const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hello Apply 2 Fly, I'd like a free consultation about my visa application.",
+  " ",
 );
 
 export const whatsappLink = `https://wa.me/${SITE.whatsappNumber}?text=${WHATSAPP_MESSAGE}`;
