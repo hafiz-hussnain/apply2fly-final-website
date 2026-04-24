@@ -10,7 +10,6 @@ import usaImg from "@/assets/dest-usa.jpg";
 import ukImg from "@/assets/dest-uk.jpg";
 import italyImg from "@/assets/dest-italy.jpg";
 import germanyImg from "@/assets/dest-germany.jpg";
-import hungaryImg from "@/assets/dest-hungary.jpg";
 import turkeyImg from "@/assets/turkeyImg.jpg"
 import malaysiaImg from "@/assets/malaysiaImg.jpg"
 import romaniaImg from "@/assets/romaniaImg.jpg"
@@ -23,7 +22,33 @@ import czechImg from "@/assets/czechImg.jpg"
 import swedenImg from "@/assets/swedenImg.jpg"
 import finlandImg from "@/assets/finlandImg.jpg"
 import denmarkImg from "@/assets/denmarkImg.jpg"
+// new added images
+import latviaImg from "@/assets/latviaImg.jpg";
+import belgiumImg from "@/assets/belgiumImg.jpg";
+import spainImg from "@/assets/spainImg.jpg";
+import hungaryImg from "@/assets/hungaryImg.jpg";
 
+const nameToAnchor: Record<string, string> = {
+  "United States":  "united-states",
+  "United Kingdom": "united-kingdom",
+  "Italy":          "italy",
+  "Turkey":         "turkey",
+  "Malaysia":       "malaysia",
+  "Romania":        "romania",
+  "Australia":      "australia",
+  "Cyprus":         "cyprus",
+  "Thailand":       "thailand",
+  "Switzerland":    "switzerland",
+  "Lithuania":      "lithuania",
+  "Czech Republic": "czech-republic",
+  "Sweden":         "sweden",
+  "Finland":        "finland",
+  "Denmark":        "denmark",
+   "Latvia":  "latvia",
+  "Belgium": "belgium",
+  "Spain":   "spain",
+  "Hungary": "hungary",
+};
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -60,6 +85,10 @@ const destinations = [
   { name: "Sweden", img: swedenImg, tag: "Study & Visit" },
   { name: "Finland", img: finlandImg, tag: "Study & Visit" },
   { name: "Denmark", img: denmarkImg, tag: "Study & Visit" },
+    { name: "Latvia",  img: latviaImg,  tag: "Study & Visit" },
+  { name: "Belgium", img: belgiumImg, tag: "Study & Visit" },
+  { name: "Spain",   img: spainImg,   tag: "Study & Visit" },
+  { name: "Hungary", img: hungaryImg, tag: "Study & Visit" },
 ];
 
 const services = [
@@ -375,14 +404,14 @@ function HomePage() {
               </article>
             ))}
           </div> */}
-          {/* Slice the array: 5 for mobile, all 15 for desktop (md and up) */}
-<div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
   {destinations.slice(0, 15).map((d, i) => (
-    <article
+    <a
       key={d.name}
-      className={`group relative overflow-hidden rounded-2xl ${
+      href={`/destinations#${nameToAnchor[d.name]}`}
+      className={`group relative overflow-hidden rounded-2xl cursor-pointer ${
         i === 0 ? "lg:col-span-2 lg:row-span-2" : ""
-      } ${i >= 5 ? "hidden md:block" : "block"}`} // Hides items after the 5th one on mobile
+      } ${i >= 5 ? "hidden md:block" : "block"}`}
     >
       <img
         src={d.img}
@@ -393,6 +422,8 @@ function HomePage() {
         loading="lazy"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/30 to-transparent" />
+      {/* Gold tint on hover */}
+      <div className="absolute inset-0 bg-[var(--gold)]/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <div className="absolute inset-x-0 bottom-0 p-6">
         <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--gold)]">
           {d.tag}
@@ -400,12 +431,16 @@ function HomePage() {
         <h3 className="mt-2 font-display text-2xl font-semibold text-white md:text-3xl">
           {d.name}
         </h3>
+        {/* Slides up on hover */}
+        <p className="mt-1 translate-y-2 text-xs font-medium text-white/0 transition-all duration-300 group-hover:translate-y-0 group-hover:text-white/80">
+          View details →
+        </p>
       </div>
-    </article>
+    </a>
   ))}
 </div>
 
-{/* Mobile-only "See All" Button */}
+{/* Mobile-only "See All" Button — keep unchanged */}
 <div className="mt-10 flex justify-center md:hidden">
   <a
     href="/destinations"
@@ -414,6 +449,7 @@ function HomePage() {
     See all 15 Destinations
   </a>
 </div>
+
         </div>
       </section> }
 
