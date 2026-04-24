@@ -131,7 +131,7 @@ const testimonials = [
 const stats = [
   { num: 100,   suffix: "+",  label: "Students Sent"   },
   { num: 20, suffix: "+",  label: "Successful Visas"   },
-  { num: 15,    suffix: "",   label: "Top Destinations"   },
+  { num: 19,    suffix: "",   label: "Top Destinations"   },
   { num: 98,   suffix: "%",  label: "Client Satisfaction" },
 ];
 
@@ -369,7 +369,7 @@ function HomePage() {
               </h2>
             </div>
             <p className="max-w-md text-sm text-muted-foreground">
-              We specialize in 15 high-demand countries. With deep expertise in each embassy's
+              We specialize in 15+ high-demand countries. With deep expertise in each embassy's
               expectations, timelines, and approval criteria.
             </p>
           </div>
@@ -405,7 +405,7 @@ function HomePage() {
             ))}
           </div> */}
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-  {destinations.slice(0, 15).map((d, i) => (
+  {destinations.slice(0, 19).map((d, i) => (
     <a
       key={d.name}
       href={`/destinations#${nameToAnchor[d.name]}`}
@@ -446,7 +446,7 @@ function HomePage() {
     href="/destinations"
     className="rounded-full border border-[var(--gold)] px-8 mb-8 py-3 text-sm font-semibold text-navy transition-all hover:bg-[var(--gold)] hover:text-white"
   >
-    See all 15 Destinations
+    See all 15+ Destinations
   </a>
 </div>
 
@@ -492,7 +492,7 @@ function HomePage() {
 
           <div className="mt-16 grid grid-cols-3 gap-6 border-t border-white/10 pt-10 text-center">
             {[
-              { icon: Globe2, label: "15 Countries" },
+              { icon: Globe2, label: "15+ Countries" },
               { icon: Users, label: "100+ Clients" },
               { icon: ShieldCheck, label: "Serving Since 2024" },
             ].map((b) => (

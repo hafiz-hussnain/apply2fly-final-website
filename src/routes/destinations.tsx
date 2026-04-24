@@ -27,17 +27,17 @@ import hungaryImg from "@/assets/hungaryImg.jpg";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Destinations. 15 Countries | Apply 2 Fly" },
+      { title: "Destinations. 15+ Countries | Apply 2 Fly" },
       {
         name: "description",
         content:
-          "Specialist visa support for 15 countries. For both study and visit visa applicants.",
+          "Specialist visa support for 15+ countries. For both study and visit visa applicants.",
       },
       { property: "og:title", content: "Destinations. Apply 2 Fly Visa Consultants" },
       {
         property: "og:description",
         content:
-          "Visa expertise for 15 top destinations. Study and visit applications.",
+          "Visa expertise for 15+ top destinations. Study and visit applications.",
       },
     ],
   }),
