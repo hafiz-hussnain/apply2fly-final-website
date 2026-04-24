@@ -9,7 +9,7 @@ export const SITE = {
 };
 
 export const WHATSAPP_MESSAGE = encodeURIComponent(
-  " ",
+  "Hi, I'm interested in studying abroad. Can you please guide me?",
 );
 
 export const whatsappLink = `https://wa.me/${SITE.whatsappNumber}?text=${WHATSAPP_MESSAGE}`;
